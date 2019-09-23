@@ -1,2 +1,2 @@
 # IOtools
-Input-output analysis tools to study the balance between the various sectors of the national economy.
+Input-output analysis tools to research balance between various sectors of a national economy.
