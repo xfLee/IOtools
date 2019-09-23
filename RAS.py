@@ -50,9 +50,11 @@ class RAS(object):
         return k, A1, Z2n, R, S
 
 def test():
-    A0 = np.array([[0, 120, 40],
+    Z0 = np.array([[0, 120, 40],
                    [90, 60, 90],
                    [60, 40, 100]])
+    X0 = np.array([300, 400, 500])
+    A0 = np.dot(Z0, np.linalg.inv(np.diag(X0)))
     X1 = np.diag([400, 500, 600])
     u1 = np.array([180, 330, 220])
     v1 = np.array([200, 240, 290])
