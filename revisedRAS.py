@@ -68,16 +68,17 @@ def test():
     v1 = np.array([200, 240, 290])
     epsilon = 0.01
     revisedElements = {(1, 1): 75}
-    ras = RAS(A0, X1, u1, v1, epsilon, revisedElements).revise()
+    ras = RAS(A0, X1, u1, v1, epsilon, revisedElements)
+    ras.revise()
     k, A1, Z2n, R, S = ras.run()
-    print("修正RAS法计算过程循环次数：" + str(k - 1))
-    print("修正RAS法估计的目标年直接消耗系数矩阵A1：\n")
+    print("1.修正RAS法计算过程循环次数：" + str(k - 1))
+    print("2.修正RAS法估计的目标年直接消耗系数矩阵A1：")
     print(A1)
-    print("修正RAS法估计的目标年消耗矩阵A1*X1：\n")
+    print("3.修正RAS法估计的目标年消耗矩阵A1*X1：")
     print(Z2n)
-    print("修正RAS法估计的目标年R矩阵：\n")
+    print("4.修正RAS法估计的目标年R矩阵：")
     print(R)
-    print("修正RAS法估计的目标年S矩阵：\n")
+    print("5.修正RAS法估计的目标年S矩阵：")
     print(S)
 
 # if __name__ == "main":

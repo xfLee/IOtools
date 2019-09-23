@@ -56,14 +56,14 @@ def test():
     epsilon = 0.01
     ras = RAS(A0, X1, u1, v1, epsilon)
     k, A1, Z2n, R, S = ras.run()
-    print("标准RAS法计算过程循环次数：" + str(k - 1))
-    print("标准RAS法估计的目标年直接消耗系数矩阵A1：\n")
+    print("1.标准RAS法计算过程循环次数：" + str(k - 1))
+    print("2.标准RAS法估计的目标年直接消耗系数矩阵A1：")
     print(A1)
-    print("标准RAS法估计的目标年消耗矩阵A1*X1：\n")
+    print("3.标准RAS法估计的目标年消耗矩阵A1*X1：")
     print(Z2n)
-    print("标准RAS法估计的目标年R矩阵：\n")
+    print("4.标准RAS法估计的目标年R矩阵：")
     print(R)
-    print("标准RAS法估计的目标年S矩阵：\n")
+    print("5.标准RAS法估计的目标年S矩阵：")
     print(S)
 
 # if __name__ == "main":
