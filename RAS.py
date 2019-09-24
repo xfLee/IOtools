@@ -10,7 +10,7 @@ class RAS(object):
         self.X1 = X1
         self.u1 = u1
         self.v1 = v1
-        self.i = np.array([1, 1, 1])
+        self.i = np.ones((1, A0.shape[0]))
         self.epsilon = epsilon
 
     def run(self):
