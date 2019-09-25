@@ -36,7 +36,7 @@ def IOLp(A0, X1, u1, v1):
     # prob += x['0_1_a'] == 0.260
     # prob += x['2_0_a'] == 0.173
 
-    prob.writeLP('ALL.lp')
+    prob.writeLP('IOLp.lp')
 
     # Solve
     prob.solve(PULP_CBC_CMD(cuts='on', msg=1, threads=4))
